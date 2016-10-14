@@ -29,3 +29,80 @@ body {
   height: 100%;
   background: white;
 }
+
+.header {
+  height: 20%;
+  width: 100%;
+  display: inline-block;
+  font-family: "Merriweather", serif;
+}
+.header > * {
+  display: inline-block;
+}
+.header .logo {
+  width: 17%;
+  height: 100%;
+  background: #141414;
+  font-weight: bold;
+  padding-left: 3%;
+}
+.header .logo > * {
+  display: inline-block;
+}
+.header .logo img {
+  vertical-align: middle;
+  max-height: 112px;
+  width: 50%;
+  position: relative;
+  margin-top: 8%;
+}
+.header .logo p {
+  color: white;
+}
+.header .quick-nav {
+  width: 50%;
+  padding-left: 8.33333333333333%;
+  font-style: italic;
+}
+.header .quick-nav ul :nth-child(2) {
+  margin: 0 2.5%;
+}
+.header .quick-nav li {
+  display: inline-block;
+}
+.header .quick-nav a {
+  text-decoration: none;
+  color: #141414;
+}
+.header .header-cta {
+  width: 24%;
+}
+.header .header-cta > * {
+  display: inline-block;
+}
+.header .nav-btn {
+  width: 8%;
+  padding-right: 3%;
+}
+.header .nav-btn img {
+  float: right;
+  position: relative;
+  top: -50%;
+  transform: translateY(50%);
+}
+
+.main {
+  width: 100%;
+  height: 80%;
+  padding: 3%;
+  display: inline-block;
+}
+.main .main-module {
+  background: #141414;
+  width: 100%;
+  height: 100%;
+}
+.main .landing {
+  text-align: center;
+  color: white;
+}

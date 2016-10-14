@@ -10,6 +10,36 @@ head
 	script(src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js")
 	title LunarCube Studio
 body
+	.container
+		.header
+			.logo
+				img(src="assets/logo.svg", alt="LunarCube site logo.")
+				p LunarCube
+
+			.quick-nav
+				ul
+					li
+						a(href="#") Portfolio
+					li
+						a(href="#") Blog
+					li
+						a(href="#") Github
+
+			.header-cta
+				p Got work?
+				.header-cta-wrapper
+					a(href="#") Hire Me!
+
+			.nav-btn
+				a(href="#"): img(src="assets/burger-btn.svg", alt="hamburger navigation button.")
+
+		.main
+			.main-module
+				.landing
+					h1 Take The Day. Design Your Life.
+					img(src="assets/logo.svg", alt="LunarCube site logo.")
+					.landing-cta-wrapper
+						p Get Started
 
 
 	script(type="text/javascript" src="js/jquery.js")
