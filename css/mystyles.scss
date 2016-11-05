@@ -23,7 +23,54 @@ body{
   height: 100%;
   font-size: 16px;
 	font-family: $font-p;
+  background: #141414;
+}
+.hidden{
+  display: none;
+}
+//////////////////////////////////////////////////////////////////Layout & Styles
+.site-container{
+  background: white;
+  color: #141414;
+  position: relative;
+}
+.header{
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  max-height: 150px;
+  width: 100%;
+
+  a{
+    color: #141414;
+    text-decoration: none;
+  }
+  ul{
+    list-style-type: none;
+  }
+
+  .logo, .quick-nav, .header-cta, .nav{
+    display: inline-block;
+  }
+
+  .logo{
+    img, p{
+      display: inline-block;
+    }
+  }
+  .quick-nav{
+
+    li{
+      display: inline-block;
+    }
+  }
 }
 
-//////////////////////////////////////////////////////////////////Layout & Styles
-
+.pop-out-nav{
+  background: #141414;
+}
+.landing, .vision, .studio, .contact{
+  background: #141414;
+}

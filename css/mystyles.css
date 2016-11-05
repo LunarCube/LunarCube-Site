@@ -22,4 +22,49 @@ body {
   height: 100%;
   font-size: 16px;
   font-family: "Merriweather", serif;
+  background: #141414;
+}
+
+.hidden {
+  display: none;
+}
+
+.site-container {
+  background: white;
+  color: #141414;
+  position: relative;
+}
+
+.header {
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  max-height: 150px;
+  width: 100%;
+}
+.header a {
+  color: #141414;
+  text-decoration: none;
+}
+.header ul {
+  list-style-type: none;
+}
+.header .logo, .header .quick-nav, .header .header-cta, .header .nav {
+  display: inline-block;
+}
+.header .logo img, .header .logo p {
+  display: inline-block;
+}
+.header .quick-nav li {
+  display: inline-block;
+}
+
+.pop-out-nav {
+  background: #141414;
+}
+
+.landing, .vision, .studio, .contact {
+  background: #141414;
 }

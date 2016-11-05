@@ -3,6 +3,7 @@
 /*jquery here */
 
 $(document).ready(function(){
+	$('#fullpage').fullpage();
 	
 
 }); //////////////////////////////////////////////////////end document ready...
