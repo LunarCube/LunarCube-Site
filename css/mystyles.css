@@ -145,7 +145,8 @@ body {
 
 .main {
   width: 100%;
-  height: 80%;
+  height: 100%;
+  max-height: 544px;
   background: white;
 }
 
@@ -158,13 +159,21 @@ body {
   color: white;
   text-align: center;
   height: 100%;
-  width: 97%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .fullpage-wrapper {
   width: 100% !important;
+  max-height: 566px !important;
   transform: none !important;
+  margin: 0 auto;
+}
+
+.section-container {
+  width: 97%;
+  height: 100%;
+  margin: 0 auto;
 }
 
 .fp-section {
@@ -184,6 +193,17 @@ body {
   z-index: 1;
 }
 
+.fp-tableCell {
+  height: 100%;
+  width: 100%;
+}
+
+.section {
+  height: 100%;
+  width: 100%;
+  max-height: 544px;
+}
+
 .spacer {
   content: '';
   background: white;
@@ -193,6 +213,25 @@ body {
   bottom: 0;
   left: 0;
   z-index: 100;
+}
+
+.vision {
+  width: 100%;
+  height: 100%;
+}
+.vision .aside {
+  width: 50%;
+  height: 100%;
+  background: #141414;
+  display: inline-block;
+  vertical-align: middle;
+}
+.vision .content-vision {
+  width: 49%;
+  height: 100%;
+  background: #141414;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 @media screen and (max-width: 1250px) {
