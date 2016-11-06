@@ -41,7 +41,8 @@ body {
 
 .header {
   width: 100%;
-  height: 150px;
+  height: 170px;
+  padding-bottom: 25px;
   position: relative;
   z-index: 2;
   background: white;
@@ -103,8 +104,8 @@ body {
   top: 0;
   right: 150px;
   width: 20%;
+  height: 145px;
   min-width: 255px;
-  height: 100%;
   text-align: right;
   vertical-align: top;
 }
@@ -158,7 +159,7 @@ body {
   text-align: center;
   height: 100%;
   width: 97%;
-  margin: 1.5% auto 0;
+  margin: 0 auto;
 }
 
 .spacer {
@@ -169,6 +170,7 @@ body {
   position: fixed;
   bottom: 0;
   right: 0;
+  display: none;
 }
 
 @media screen and (max-width: 1250px) {
