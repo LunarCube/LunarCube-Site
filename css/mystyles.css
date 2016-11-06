@@ -152,40 +152,23 @@ body {
   background: #141414;
 }
 
-.box-1 {
+.box-1, .box-2, .box-3, .box-4 {
   background: #141414;
   color: white;
   text-align: center;
   height: 100%;
   width: 97%;
-  margin: 0 auto;
+  margin: 1.5% auto 0;
 }
 
-.box-2 {
-  background: #141414;
-  color: white;
-  text-align: center;
-  height: 100%;
-  width: 97%;
-  margin: 0 auto;
-}
-
-.box-3 {
-  background: #141414;
-  color: white;
-  text-align: center;
-  height: 100%;
-  width: 97%;
-  margin: 0 auto;
-}
-
-.box-4 {
-  background: #141414;
-  color: white;
-  text-align: center;
-  height: 100%;
-  width: 97%;
-  margin: 0 auto;
+.spacer {
+  height: 3%;
+  width: 100%;
+  background: white;
+  content: '';
+  position: fixed;
+  bottom: 0;
+  right: 0;
 }
 
 @media screen and (max-width: 1250px) {
