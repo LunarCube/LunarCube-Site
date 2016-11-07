@@ -1,289 +1,132 @@
 
-$font-p: 'Merriweather', serif;
-$font-s: 'Open Sans', sans-serif;
-
-html{
-	box-sizing: border-box;
-	-ms-text-size-adjust: 100%; 
-  -webkit-text-size-adjust: 100%; 
-	height: 100vh;
-  width: 100vw;
-  max-width: 100%;
+/* -------------------- Resets --------------------- */
+body, form, fieldset, ol, ul, li, h1, h2, h3, h4, h5, h6, p {
+margin:0;
+padding:0;
 }
-html, body, *{
-	padding: 0;
-	margin: 0;
+img {
+border:0; /* kills Gecko bug when img's are placed inside links */
+vertical-align:bottom; /* set vertical align to bottom for IE */
 }
-*, *:before, *:after{
-	box-sizing: inherit;
+/* ------------------- Defaults ------------------- */
+html {
+height:100%; 
+overflow:auto; /* triggers 100% height in Opera 9.5 */
+overflow-y:scroll; /* creates a horizontal scrollbar, for a more consistent look & feel */
 }
-body{
-  width: 100%;
-  height: auto;
-  font-size: 16px;
-	font-family: $font-p;
-  background: darkred;
+body {
+height:100%; /* helps make height 100% */
+font:100%/1.5 Arial, Helvetica, sans-serif; /* 100% = 16px, 93.75% = 15px, 87.5% = 14px, 81.25% = 13px, 75% = 12px - font-size in % prevents IE's resize bug */
+background:#FDFDFD;
+color:#333;
 }
-.hidden{
-  display: none;
+/* ------------------ Typography ------------------- */
+h1, h2, h3, h4, h5, h6, p {
+margin:0 0 1em;
 }
-//////////////////////////////////////////////////////////////////Layout & Styles
-.site-container{
-  background: white;
-  width: 100%;
-  height: 100%;
-  max-height: 100%;
-  padding-bottom: 25px;
+p, ul, ol {
+font-size:1em;
 }
-.header{
-  width: 100%;
-  height: 170px;
-  padding-bottom: 25px;
-  position: relative;
-  z-index: 2;
-  background: white;
-
-  ul{
-    list-style-type: none;
-    :nth-child(2){
-      margin-right: 50px;
-      margin-left: 50px;
-    }
-
-    li{
-      display: inline-block;
-    }
-  }
-  a{
-    text-decoration: none;
-    color: #141414;
-  }
-  .logo, .quick-nav, .header-cta,{
-    display: inline-block;
-  }
-  .logo{
-    width: 20%;
-    min-width: 250px;
-    height: 100%;
-    background: #141414;
-    color: white;
-    vertical-align: middle;
-    position: relative;
-    z-index: 3;
-
-    img, p{
-      display: inline-block;
-    }
-
-    img{
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      vertical-align: top;
-      margin-left: 5px;
-    }
-
-    p{
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      font-weight: bold;
-    }
-  }
-  .quick-nav{
-    text-align: center;
-    vertical-align: top;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    font-style: italic;
-    margin-left: 10%;
-  }
-  .header-cta{
-    position: absolute;
-    top: 0;
-    right: 150px;
-    width: 20%;
-    height: 145px;
-    min-width: 255px;
-    text-align: right;
-    vertical-align: top;
-
-    p{
-      display: inline-block;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      margin-right: 5px;
-    }
-    .cta{
-      display: inline-block;
-      height: 100%;
-      background: #3cb879;
-      width: 65%;
-      min-width: 150px;
-      text-align: center;
-
-    }
-  }
-  .nav{
-    height: 100%;
-    width: 150px;
-    vertical-align: top;
-    position: absolute;
-    z-index: 4;
-    top: 0;
-    right: 0;
-    text-align: center;
-    background: white;
-
-    a{
-      height: 36px;
-      display: block;
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-    }
-  }
+ul {
+margin:0 0 1em 25px;
+list-style:none;
 }
-.main{
-  background: #141414;
-  color: white;
-  width: 97%;
-  height: auto;
-  max-height: 100%;
-  min-height: 100vh;
-  margin: 0 auto;
-
-  .section{
-    width: 100%;
-    height: 80%;
-  }
-  .wrapper-landing{
-    height: 100%;
-    width: 100%;
-    text-align: center;
-  }
+h1 {font-size:1.6em;}
+h2 {font-size:1.5em;}
+h3 {font-size:1.4em;}
+h4 {font-size:1.3em;}
+h5 {font-size:1.2em;}
+h6 {font-size:1.1em;}
+/* -------------------- Forms ---------------------- */
+fieldset {
+border:none;
 }
-////////////////////////////////////////////////////////////////media querries
-
-@media screen and (max-width: 1250px){
-  .header{
-    .quick-nav{
-      margin-left: 7.5%;
-    }
-  }
+form :focus {
+outline:0; /* removes Safari's blue border */
+}  
+input, select, textarea {
+font-size:1em;
+font-family:Arial, Helvetica, sans-serif;
 }
-@media screen and (max-width: 1150px){
-  .header{
-    .quick-nav{
-      margin-left: 6.5%;
-    }
-  }
+label {
+cursor:pointer;
+vertical-align:middle;
 }
-@media screen and (max-width: 1110px){
-  .header{
-    .quick-nav{
-      margin-left: 4%;
-    }
-  }
+input {
+vertical-align:middle;
 }
-@media screen and (max-width: 1050px){
-  .header{
-    .quick-nav{
-      margin-left: 15%;
-    }
-    .header-cta{
-      display: none;
-    }
-  }
+textarea { 
+overflow:auto; /* removes scrollbar from IE when none is needed */
+} 
+/* -------------------- Layout --------------------- */
+#wrap {
+margin:0 auto; /* centers layout */
+min-height:100%; /* height 100% in all modern browsers */
 }
-@media screen and (max-width: 900px){
-  .header{
-    .quick-nav{
-      margin-left: 10%;
-    }
-  }
+#head {
 }
-@media screen and (max-width: 850px){
-  .header{
-    .quick-nav{
-      margin-left: 8%;
-    }
-  }
+#nav {
 }
-@media screen and (max-width: 800px){
-  .header{
-    .quick-nav{
-      margin-left: 6%;
-      ul{
-        :nth-child(2){
-          margin: 0 35px 0 35px;
-        }
-      }
-    }
-  }
+#content {
 }
-@media screen and (max-width: 750px){
-  .header{
-    .quick-nav{
-      margin-left: 4%;
-    }
-  }
+#left {
+float:left;
 }
-@media screen and (max-width: 700px){
-  .header{
-    .quick-nav{
-      margin-left: 2%;
-       ul{
-        :nth-child(2){
-          margin: 0 25px 0 25px;
-        }
-      }
-    }
-  }
+#foot {
+clear:both;
 }
-@media screen and (max-width: 650px){
-  .header{
-    .quick-nav{
-      margin-left: .5%;
-       ul{
-        :nth-child(2){
-          margin: 0 20px 0 20px;
-        }
-      }
-    }
-  }
+/* ------------------- Links ---------------------- */
+a {
+text-decoration:underline;
+color:#000;
+outline:0; /* removes dotted border */
 }
-@media screen and (max-width: 624px){
-  .header{
-    .logo{
-      width: 74.5%;
-    }
-    .quick-nav{
-      display: none;
-    }
-  }
+a:visited {
+color:#999;
 }
-@media screen and (max-width: 380px){
-  .header{
-    .logo{
-      width: 50%;
-
-      img, p{
-        display: block;
-      }
-      img{
-        width: 25%;
-        position: relative;
-        left: 35px,
-      }
-      p{
-        left: 27px;
-      }
-    }
-    .quick-nav{
-      display: none;
-    }
-  }
+a:hover, a:focus, a:active {
+text-decoration:none;
+/* add-custom:outline-rule-here; */
 }
+/* --------------------- Menus -------------------- */
+/* Main Menu */
+#nav {
+}
+#nav li {
+}
+#nav a {
+text-decoration:none;
+}
+#nav a:hover, #nav a:focus, #nav a:active {
+}
+/* Foot Menu */
+#foot ul {
+}
+#foot li {
+}
+#foot a {
+text-decoration:none;
+}
+#foot a:hover, #foot a:focus, #foot a:active {
+}
+/* ---------------- Global Classes --------------- */
+.clear {
+clear:both;
+line-height:0;
+height:0;
+font-size:0;
+}
+.clearfix:after {
+content:" "; 
+display:block; 
+height:0;
+font-size:0; 
+clear:both; 
+visibility:hidden;
+}
+.clearfix {display:inline-block;}
+/* mac hide \*/
+* html .clearfix {height:1%;}
+.clearfix {display:block;}
+/* End hide */
+/* ------------------- Content ------------------- */
